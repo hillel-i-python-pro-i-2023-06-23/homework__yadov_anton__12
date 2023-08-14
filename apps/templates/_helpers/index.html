@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+        {% if view_name == "contacts" %}
+        <title>Contacts Project</title>
+    {% else %}
+        <title>Generator Project</title>
+    {% endif %}
+</head>
+
+<body>
+
+{% include "_helpers/_header.html" with some_condition=request.resolver_match.view_name %}
+
+<div>
+    {% block content %}
+    {% endblock %}
+</div>
+
+</body>
+</html>

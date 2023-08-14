@@ -1,0 +1,15 @@
+{% extends "_helpers/index.html" %}
+
+<!-- Block with contacts list. -->
+{% block content %}
+
+    <ol>
+        {% for contact in contacts %}
+            <li>
+                <p>Name: {{ contact.name }}</p>
+                <p>Phone: {{ contact.phone_number }}</p>
+            </li>
+        {% endfor %}
+    </ol>
+
+{% endblock %}
