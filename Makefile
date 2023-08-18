@@ -1,14 +1,13 @@
-# Contains a set of instructions (targets) to automate tasks related to building, managing, and deploying container.
-
 .PHONY: d-homework-i-run
 # Make all actions needed for run homework from zero.
 d-homework-i-run:
 	@bash ./scripts/d-homework-i-run.sh
 
+
 .PHONY: d-homework-i-purge
 # Make all actions needed for purge homework related data.
 d-homework-i-purge:
-	@bash ./scripts/d-homework-i-purge.sh
+	@make d-purge
 
 
 .PHONY: init-configs
@@ -46,7 +45,7 @@ init-dev:
 .PHONY: homework-i-run
 # Run homework.
 homework-i-run:
-	@python app.py
+	@python run.py
 
 .PHONY: homework-i-purge
 homework-i-purge:
@@ -62,6 +61,7 @@ pre-commit-run:
 # Run tools for all files.
 pre-commit-run-all:
 	@pre-commit run --all-files
+
 
 .PHONY: migrations
 # Make migrations

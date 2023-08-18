@@ -1,8 +1,10 @@
 # Ignore all
 **
 
-# Exclude files/foldeers needed for docker
-!apps/
-!core/
+# Exclude
 !manage.py
+!app/
+!core/
 !requirements.txt
+!Makefile
+!docker/app

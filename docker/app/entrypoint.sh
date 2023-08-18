@@ -1,7 +1,5 @@
 #!/usr/bin/env bash
 
-# Add migrations to docker, part 1
-
 # shellcheck disable=SC2124
 cmd="$@"
 

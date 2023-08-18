@@ -1,6 +1,5 @@
-# Contains configuration settings for Black and Autoflake related to the project.
 [tool.black]
-line-length = 80
+line-length = 120
 target-version = ['py311']
 extend-exclude = '''
 venv

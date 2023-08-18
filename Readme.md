@@ -1,9 +1,9 @@
-# Django application
+ # Django application
 
 ---
 ![Main workflow](https://github.com/hillel-i-python-pro-i-2023-06-23/homework__yadov_anton__12_django/actions/workflows/main-workflow.yml/badge.svg)
 
-## 🏠 Homework 10
+## 🏠 Homework 13
 
 Simple Django project.
 
